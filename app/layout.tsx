@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className={`${inter.className} bg-dark-900 text-gray-100`}>
+      <body className={`${inter.className} bg-dark-900 text-gray-100`} suppressHydrationWarning>
         <SplashScreen />
         <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
           <Logo />
