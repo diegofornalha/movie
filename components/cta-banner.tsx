@@ -20,7 +20,7 @@ export function CTABanner({ title, gradient = "from-navy-700 to-navy-900" }: CTA
             <h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-6">
               {title}
             </h3>
-            <button className="relative px-8 py-4 bg-gradient-to-r from-slate-100 to-slate-200 text-navy-900 rounded-full font-semibold transform transition-all hover:scale-105 hover:shadow-2xl overflow-hidden group">
+            <a href="https://wa.me/5521936182339?text=Quero%20Agentes%20Integrados" target="_blank" rel="noopener noreferrer" className="relative inline-block px-8 py-4 bg-gradient-to-r from-slate-100 to-slate-200 text-navy-900 rounded-full font-semibold transform transition-all hover:scale-105 hover:shadow-2xl overflow-hidden group">
               {/* Static border */}
               <div className="absolute inset-0 border border-white/30 rounded-full"></div>
               
@@ -38,7 +38,7 @@ export function CTABanner({ title, gradient = "from-navy-700 to-navy-900" }: CTA
               </div>
               
               <span className="relative z-10">Agendar demonstração gratuita →</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

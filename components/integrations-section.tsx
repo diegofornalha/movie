@@ -78,7 +78,7 @@ export function IntegrationsSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <button className="relative px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-navy-700 to-navy-900 rounded-full overflow-hidden group transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30 hover:from-navy-600 hover:to-navy-800">
+          <a href="https://wa.me/5521936182339?text=Quero%20Agentes%20Integrados" target="_blank" rel="noopener noreferrer" className="relative inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-navy-700 to-navy-900 rounded-full overflow-hidden group transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30 hover:from-navy-600 hover:to-navy-800">
             {/* Static border */}
             <div className="absolute inset-0 border border-navy-600/30 rounded-full"></div>
             
@@ -97,7 +97,7 @@ export function IntegrationsSection() {
             
             <span className="relative z-10">Começar agora →</span>
             <div className="absolute inset-0 bg-gradient-to-r from-navy-600 to-navy-800 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          </button>
+          </a>
         </div>
       </div>
     </section>

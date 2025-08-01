@@ -96,7 +96,7 @@ export function SkillsSection() {
           </div>
 
           <div className="text-center mt-8">
-            <button className="relative px-8 py-4 bg-gradient-to-r from-navy-700 to-navy-900 text-white rounded-full font-semibold transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30 overflow-hidden group hover:from-navy-600 hover:to-navy-800">
+            <a href="https://wa.me/5521936182339?text=Quero%20Agentes%20Integrados" target="_blank" rel="noopener noreferrer" className="relative inline-block px-8 py-4 bg-gradient-to-r from-navy-700 to-navy-900 text-white rounded-full font-semibold transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30 overflow-hidden group hover:from-navy-600 hover:to-navy-800">
               {/* Static border */}
               <div className="absolute inset-0 border border-navy-600/30 rounded-full"></div>
               
@@ -114,7 +114,7 @@ export function SkillsSection() {
               </div>
               
               <span className="relative z-10">Teste 7 dias grátis →</span>
-            </button>
+            </a>
           </div>
         </div>
 

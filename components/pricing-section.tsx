@@ -128,8 +128,8 @@ export function PricingSection() {
                   </ul>
                   
                   {/* CTA Button */}
-                  <button className={`
-                    relative w-full py-4 rounded-full font-semibold transition-all duration-300 overflow-hidden group
+                  <a href="https://wa.me/5521936182339?text=Quero%20Agentes%20Integrados" target="_blank" rel="noopener noreferrer" className={`
+                    relative block text-center w-full py-4 rounded-full font-semibold transition-all duration-300 overflow-hidden group
                     ${plan.popular
                       ? 'bg-gradient-to-r from-navy-700 to-navy-900 text-white hover:from-navy-600 hover:to-navy-800 transform hover:scale-105 shadow-lg hover:shadow-navy-700/30'
                       : 'bg-dark-800/50 backdrop-blur-sm text-white border border-navy-700/30 hover:border-navy-600/50 hover:bg-dark-700/50'
@@ -152,7 +152,7 @@ export function PricingSection() {
                     </div>
                     
                     <span className="relative z-10">{plan.cta}</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

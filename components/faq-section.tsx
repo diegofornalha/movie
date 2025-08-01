@@ -57,7 +57,7 @@ export function FAQSection() {
             Você tem perguntas?<br />
             Nós temos as respostas.
           </h2>
-          <button className="relative mt-4 px-6 py-3 bg-gradient-to-r from-navy-700 to-navy-900 hover:from-navy-600 hover:to-navy-800 text-white rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-navy-700/30 overflow-hidden group">
+          <a href="https://wa.me/5521936182339?text=Quero%20Agentes%20Integrados" target="_blank" rel="noopener noreferrer" className="relative inline-block mt-4 px-6 py-3 bg-gradient-to-r from-navy-700 to-navy-900 hover:from-navy-600 hover:to-navy-800 text-white rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-navy-700/30 overflow-hidden group">
             {/* Static border */}
             <div className="absolute inset-0 border border-navy-600/30 rounded-full"></div>
             
@@ -75,7 +75,7 @@ export function FAQSection() {
             </div>
             
             <span className="relative z-10">Converse com nossa equipe pelo WhatsApp</span>
-          </button>
+          </a>
         </div>
 
         {/* FAQ Items */}
