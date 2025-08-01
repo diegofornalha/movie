@@ -27,7 +27,7 @@ export function ChallengeSection() {
     <section ref={sectionRef} className="py-20 px-4 bg-gradient-to-b from-black to-blue-900">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-blue-500 font-semibold mb-2">• DESAFIO RESOLVIDO</p>
+          <p className="text-blue-500 font-semibold mb-2">DESAFIO RESOLVIDO</p>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-100 mb-6">
             O{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">DESAFIO 5</span>{" "}
@@ -46,7 +46,7 @@ export function ChallengeSection() {
             }`}
           >
             <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 backdrop-blur-sm rounded-2xl p-8 border border-red-700/30">
-              <h3 className="text-2xl font-bold text-red-400 mb-6">❌ Métodos Tradicionais</h3>
+              <h3 className="text-2xl font-bold text-red-400 mb-6">Métodos Tradicionais</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-red-500 mr-3">•</span>
@@ -80,7 +80,7 @@ export function ChallengeSection() {
             style={{ transitionDelay: "200ms" }}
           >
             <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 backdrop-blur-sm rounded-2xl p-8 border border-blue-700/30">
-              <h3 className="text-2xl font-bold text-blue-400 mb-6">✅ Funcionários IA</h3>
+              <h3 className="text-2xl font-bold text-blue-400 mb-6">Funcionários IA</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-3">•</span>

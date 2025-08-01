@@ -28,28 +28,28 @@ export function BenefitsSection() {
       title: "Substitui métodos tradicionais",
       description:
         "Deixe para trás planilhas, e-mails intermináveis e processos manuais. Nossa IA revoluciona como você trabalha, automatizando tudo de forma inteligente.",
-      icon: "🔄",
+      icon: "",
       gradient: "from-blue-700 to-blue-900",
     },
     {
       title: "Crie funcionários IA facilmente",
       description:
         "Em poucos cliques, configure funcionários de IA especializados para cada área da sua empresa. Sem código, sem complicação.",
-      icon: "👥",
+      icon: "",
       gradient: "from-blue-600 to-blue-800",
     },
     {
       title: "Responde em tempo real",
       description:
         "Responda aos clientes com precisão e velocidade, com informações da sua empresa e produtos sempre atualizadas.",
-      icon: "⚡",
+      icon: "",
       gradient: "from-blue-500 to-blue-700",
     },
     {
       title: "Resolve o DESAFIO 5",
       description:
         "Supere o maior desafio das empresas modernas: escalar atendimento mantendo qualidade. Nossa IA resolve isso para você.",
-      icon: "🎯",
+      icon: "",
       gradient: "from-blue-400 to-blue-600",
     },
   ]
@@ -74,7 +74,7 @@ export function BenefitsSection() {
                 ></div>
 
                 {/* Icon */}
-                <div className="relative z-10 text-5xl mb-4">{benefit.icon}</div>
+                <div className="relative z-10 text-5xl mb-4"></div>
 
                 {/* Content */}
                 <h3 className="relative z-10 text-2xl font-bold text-slate-100 mb-3">{benefit.title}</h3>
