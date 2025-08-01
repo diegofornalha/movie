@@ -27,9 +27,95 @@ export function AutoSliderBanner() {
           Agentes Integrados
         </h1>
         <p className="text-xl text-gray-300 text-center mb-8">Seus Agentes Conectados</p>
-        <Button onClick={handleShopClick} size="lg" variant="outline">
-          AGENDAR DEMONSTRAÇÃO
-        </Button>
+        
+        {/* Custom button with neon border animation */}
+        <button 
+          onClick={handleShopClick}
+          className="relative px-8 py-4 text-lg font-semibold text-white bg-transparent overflow-hidden group"
+        >
+          {/* Button content */}
+          <span className="relative z-10">AGENDAR DEMONSTRAÇÃO</span>
+          
+          {/* Static border */}
+          <div className="absolute inset-0 border border-white/30"></div>
+          
+          {/* Animated neon border effect */}
+          <div className="absolute inset-0">
+            {/* Top border animation */}
+            <div className="absolute top-0 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-white to-transparent animate-border-slide-horizontal"></div>
+            
+            {/* Right border animation */}
+            <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-transparent via-white to-transparent animate-border-slide-vertical-delayed"></div>
+            
+            {/* Bottom border animation */}
+            <div className="absolute bottom-0 right-0 h-[2px] w-full bg-gradient-to-l from-transparent via-white to-transparent animate-border-slide-horizontal-reverse"></div>
+            
+            {/* Left border animation */}
+            <div className="absolute bottom-0 left-0 w-[2px] h-full bg-gradient-to-t from-transparent via-white to-transparent animate-border-slide-vertical-reverse-delayed"></div>
+          </div>
+          
+          {/* Glow effect on hover */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-white/10 blur-xl"></div>
+          </div>
+        </button>
+        
+        <style jsx>{`
+          @keyframes border-slide-horizontal {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(100%);
+            }
+          }
+          
+          @keyframes border-slide-horizontal-reverse {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+          
+          @keyframes border-slide-vertical {
+            0% {
+              transform: translateY(-100%);
+            }
+            100% {
+              transform: translateY(100%);
+            }
+          }
+          
+          @keyframes border-slide-vertical-reverse {
+            0% {
+              transform: translateY(100%);
+            }
+            100% {
+              transform: translateY(-100%);
+            }
+          }
+          
+          .animate-border-slide-horizontal {
+            animation: border-slide-horizontal 3s linear infinite;
+          }
+          
+          .animate-border-slide-horizontal-reverse {
+            animation: border-slide-horizontal-reverse 3s linear infinite;
+            animation-delay: 1.5s;
+          }
+          
+          .animate-border-slide-vertical-delayed {
+            animation: border-slide-vertical 3s linear infinite;
+            animation-delay: 0.75s;
+          }
+          
+          .animate-border-slide-vertical-reverse-delayed {
+            animation: border-slide-vertical-reverse 3s linear infinite;
+            animation-delay: 2.25s;
+          }
+        `}</style>
       </div>
     </div>
   )
