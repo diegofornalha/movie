@@ -3,9 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
+  --foreground-rgb: 248, 250, 252;
+  --background-start-rgb: 0, 0, 139;
   --background-end-rgb: 0, 0, 0;
+  
+  /* Nova paleta de cores */
+  --dark-blue: 0, 0, 139;
+  --blue: 30, 58, 138;
+  --slate: 30, 41, 59;
+  --black: 0, 0, 0;
+  
+  /* Cores de texto */
+  --text-primary: 30, 41, 59;
+  --text-secondary: 71, 85, 105;
+  --text-body: 51, 65, 85;
 }
 
 body {
@@ -25,8 +36,8 @@ body {
 
 /* Inverse text selection */
 ::selection {
-  background-color: #ffffff;
-  color: #0a0a0a;
+  background-color: #1e3a8a;
+  color: #f8fafc;
 }
 
 /* Click animation */
@@ -44,4 +55,60 @@ body {
 
 .cursor-click {
   animation: click 0.3s ease-in-out;
+}
+
+/* Neon border animations */
+@keyframes border-slide-horizontal {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes border-slide-horizontal-reverse {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes border-slide-vertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes border-slide-vertical-reverse {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-border-slide-horizontal {
+  animation: border-slide-horizontal 3s linear infinite;
+}
+
+.animate-border-slide-horizontal-reverse {
+  animation: border-slide-horizontal-reverse 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-border-slide-vertical-delayed {
+  animation: border-slide-vertical 3s linear infinite;
+  animation-delay: 0.75s;
+}
+
+.animate-border-slide-vertical-reverse-delayed {
+  animation: border-slide-vertical-reverse 3s linear infinite;
+  animation-delay: 2.25s;
 }

@@ -49,17 +49,33 @@ export function FAQSection() {
   ]
 
   return (
-    <section className="py-20 px-4 bg-dark-900">
+    <section className="py-20 px-4 bg-gradient-to-b from-black to-navy-900">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <p className="text-purple-400 font-semibold mb-2">• FAQ</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <p className="text-navy-500 font-semibold mb-2">• FAQ</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
             Você tem perguntas?<br />
             Nós temos as respostas.
           </h2>
-          <button className="mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold transition-all transform hover:scale-105">
-            💬 Converse com nossa equipe pelo WhatsApp
-          </button>
+          <a href="https://wa.me/5521936182339?text=Quero%20Agentes%20Integrados" target="_blank" rel="noopener noreferrer" className="relative inline-block mt-4 px-6 py-3 bg-gradient-to-r from-navy-700 to-navy-900 hover:from-navy-600 hover:to-navy-800 text-white rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-navy-700/30 overflow-hidden group">
+            {/* Static border */}
+            <div className="absolute inset-0 border border-navy-600/30 rounded-full"></div>
+            
+            {/* Animated neon border effect */}
+            <div className="absolute inset-0">
+              <div className="absolute top-0 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-navy-500 to-transparent animate-border-slide-horizontal"></div>
+              <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-transparent via-navy-500 to-transparent animate-border-slide-vertical-delayed"></div>
+              <div className="absolute bottom-0 right-0 h-[2px] w-full bg-gradient-to-l from-transparent via-navy-500 to-transparent animate-border-slide-horizontal-reverse"></div>
+              <div className="absolute bottom-0 left-0 w-[2px] h-full bg-gradient-to-t from-transparent via-navy-500 to-transparent animate-border-slide-vertical-reverse-delayed"></div>
+            </div>
+            
+            {/* Glow effect on hover */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-navy-600/20 blur-xl rounded-full"></div>
+            </div>
+            
+            <span className="relative z-10">Converse com nossa equipe pelo WhatsApp</span>
+          </a>
         </div>
 
         {/* FAQ Items */}
@@ -67,20 +83,20 @@ export function FAQSection() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-dark-800 rounded-xl border border-white/10 overflow-hidden transition-all duration-300 hover:border-white/20"
+              className="bg-gradient-to-br from-dark-800/80 to-dark-900/80 backdrop-blur-sm rounded-xl border border-navy-700/30 overflow-hidden transition-all duration-300 hover:border-navy-600/50 shadow-lg"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left transition-all"
               >
-                <h3 className="text-lg font-semibold text-white pr-4">
+                <h3 className="text-lg font-semibold text-slate-200 pr-4">
                   {faq.question}
                 </h3>
                 <div className={`
                   transform transition-transform duration-300
                   ${openIndex === index ? 'rotate-180' : ''}
                 `}>
-                  <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-navy-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
@@ -92,7 +108,7 @@ export function FAQSection() {
                 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
               `}>
                 <div className="px-6 pb-5">
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-slate-500 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
