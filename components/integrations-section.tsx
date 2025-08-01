@@ -2,15 +2,15 @@
 
 export function IntegrationsSection() {
   const integrations = [
-    { icon: "💬", name: "Whatsapp", description: "Nativo via QR Code", featured: true },
-    { icon: "⚙️", name: "N8N", description: "Nativo", featured: true },
-    { icon: "📊", name: "Planilhas e CRMs", description: "Via API e N8N", featured: false },
-    { icon: "📱", name: "Whatsapp Business", description: "Nativo via API", featured: true },
-    { icon: "🌐", name: "Wordpress (Site)", description: "Nativo", featured: false },
-    { icon: "🔌", name: "E em qualquer lugar!", description: "Via API", featured: true },
-    { icon: "📸", name: "Instagram", description: "Via Evolution", featured: false },
-    { icon: "🤖", name: "Evolution", description: "Nativo", featured: false },
-    { icon: "📅", name: "Google Calendar", description: "Nativo", featured: false }
+    { icon: "", name: "Whatsapp", description: "Nativo via QR Code", featured: true },
+    { icon: "", name: "N8N", description: "Nativo", featured: true },
+    { icon: "", name: "Planilhas e CRMs", description: "Via API e N8N", featured: false },
+    { icon: "", name: "Whatsapp Business", description: "Nativo via API", featured: true },
+    { icon: "", name: "Wordpress (Site)", description: "Nativo", featured: false },
+    { icon: "", name: "E em qualquer lugar!", description: "Via API", featured: true },
+    { icon: "", name: "Instagram", description: "Via Evolution", featured: false },
+    { icon: "", name: "Evolution", description: "Nativo", featured: false },
+    { icon: "", name: "Google Calendar", description: "Nativo", featured: false }
   ]
 
   return (

@@ -145,8 +145,8 @@ export function PricingSection() {
 
         {/* Additional info */}
         <div className="text-center mt-12 space-y-2">
-          <p className="text-gray-400">✓ Teste gratuito</p>
-          <p className="text-gray-400">✓ Cancele quando quiser</p>
+          <p className="text-gray-400">Teste gratuito</p>
+          <p className="text-gray-400">Cancele quando quiser</p>
           <p className="text-purple-400 font-semibold">Agora é a hora agora é o melhor momento</p>
         </div>
       </div>

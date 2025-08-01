@@ -20,42 +20,42 @@ export function SkillsSection() {
     {
       title: "Comunicação Personalizada",
       description: "Interage com clientes em e-mails, chats, telefone e mais.",
-      icon: "💬"
+      icon: ""
     },
     {
       title: "Geração de Conteúdo",
       description: "Cria textos, scripts, posts, copys e descrições otimizadas.",
-      icon: "✍️"
+      icon: ""
     },
     {
       title: "Interação por Voz",
       description: "Converse por voz, entenda e responda em tempo real.",
-      icon: "🎙️"
+      icon: ""
     },
     {
       title: "Identificação de Objeções",
       description: "Detecta e responde objeções durante conversas.",
-      icon: "🎯"
+      icon: ""
     },
     {
       title: "Funil de Vendas Completo",
       description: "Guia o cliente desde o interesse até o fechamento da venda.",
-      icon: "📊"
+      icon: ""
     },
     {
       title: "Múltiplos Atendimentos",
       description: "Gerencia milhares de conversas simultaneamente.",
-      icon: "🚀"
+      icon: ""
     },
     {
       title: "Base de Conhecimento",
       description: "Aprende com seus documentos, vídeos e áudios.",
-      icon: "🧠"
+      icon: ""
     },
     {
       title: "Análise de Perfil",
       description: "Adapta a comunicação ao perfil de cada cliente.",
-      icon: "👤"
+      icon: ""
     }
   ]
 

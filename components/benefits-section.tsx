@@ -27,25 +27,25 @@ export function BenefitsSection() {
     {
       title: "Age como humano",
       description: "Transforme a experiência do seu cliente com um atendimento natural e humanizado, que está sempre disponível.",
-      icon: "👤",
+      icon: "",
       gradient: "from-purple-500 to-purple-700"
     },
     {
       title: "Automatiza tarefas",
       description: "Deixe os processos repetitivos por conta do IA e libere sua equipe para focar no que realmente importa.",
-      icon: "⚡",
+      icon: "",
       gradient: "from-blue-500 to-blue-700"
     },
     {
       title: "Responde em tempo real",
       description: "Responda aos clientes com precisão e velocidade, com informações da sua empresa e produtos sempre atualizadas.",
-      icon: "💬",
+      icon: "",
       gradient: "from-green-500 to-green-700"
     },
     {
       title: "Resolve problemas",
       description: "Permita que a IA decida o que fazer, resolvendo problemas sem necessidade de intervenção e aumentando a eficiência.",
-      icon: "🎯",
+      icon: "",
       gradient: "from-orange-500 to-orange-700"
     }
   ]

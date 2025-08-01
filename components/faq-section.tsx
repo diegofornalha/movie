@@ -58,7 +58,7 @@ export function FAQSection() {
             Nós temos as respostas.
           </h2>
           <button className="mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold transition-all transform hover:scale-105">
-            💬 Converse com nossa equipe pelo WhatsApp
+Converse com nossa equipe pelo WhatsApp
           </button>
         </div>
 

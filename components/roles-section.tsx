@@ -8,7 +8,7 @@ export function RolesSection() {
   const roles = [
     {
       title: "Suporte",
-      icon: "🎧",
+      icon: "",
       features: [
         "Responde dúvidas",
         "Resolve problemas",
@@ -19,7 +19,7 @@ export function RolesSection() {
     },
     {
       title: "Atendente",
-      icon: "📞",
+      icon: "",
       features: [
         "Agenda reuniões",
         "Envia lembretes",
@@ -30,7 +30,7 @@ export function RolesSection() {
     },
     {
       title: "Vendedor",
-      icon: "💼",
+      icon: "",
       features: [
         "Qualifica leads",
         "Faz ofertas diretas",
@@ -41,7 +41,7 @@ export function RolesSection() {
     },
     {
       title: "Social Media",
-      icon: "📱",
+      icon: "",
       features: [
         "Responde DMs",
         "Responde comentários",

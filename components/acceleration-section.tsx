@@ -6,11 +6,11 @@ export function AccelerationSection() {
   const [activeTrack, setActiveTrack] = useState<'technical' | 'management'>('technical')
   
   const levels = [
-    { name: "Novato", challenge: "DESAFIO 1", icon: "🌱", color: "from-green-400 to-green-600" },
-    { name: "Aprendiz", challenge: "DESAFIO 2", icon: "📚", color: "from-blue-400 to-blue-600" },
-    { name: "Mago", challenge: "MISSÃO 3", icon: "🧙", color: "from-purple-400 to-purple-600" },
-    { name: "Mito", challenge: "DESAFIO 4", icon: "⚡", color: "from-orange-400 to-orange-600" },
-    { name: "Lenda", challenge: "DESAFIO 5", icon: "👑", color: "from-yellow-400 to-yellow-600" }
+    { name: "Novato", challenge: "DESAFIO 1", icon: "", color: "from-green-400 to-green-600" },
+    { name: "Aprendiz", challenge: "DESAFIO 2", icon: "", color: "from-blue-400 to-blue-600" },
+    { name: "Mago", challenge: "MISSÃO 3", icon: "", color: "from-purple-400 to-purple-600" },
+    { name: "Mito", challenge: "DESAFIO 4", icon: "", color: "from-orange-400 to-orange-600" },
+    { name: "Lenda", challenge: "DESAFIO 5", icon: "", color: "from-yellow-400 to-yellow-600" }
   ]
 
   const tracks = {
@@ -61,7 +61,7 @@ export function AccelerationSection() {
             administração de Funcionários de IA.
           </p>
           <p className="text-green-400 font-semibold mt-4 text-lg">
-            ✨ 100% gratuito para clientes
+100% gratuito para clientes
           </p>
         </div>
 
