@@ -16,7 +16,7 @@ export function PricingSection() {
         "Flowise"
       ],
       cta: "Teste 7 dias grátis →",
-      gradient: "from-dark-700 to-dark-900",
+      gradient: "from-navy-700 to-navy-900",
       popular: false
     },
     {
@@ -104,7 +104,7 @@ export function PricingSection() {
                     <span className={`text-4xl font-bold bg-gradient-to-r ${plan.gradient} bg-clip-text text-transparent`}>
                       {plan.price}
                     </span>
-                    <span className="text-slate-500 ml-1">{plan.period}</span>
+                    <span className={`text-slate-500 ml-1 bg-gradient-to-r ${plan.gradient} bg-clip-text text-transparent`}>{plan.period}</span>
                   </div>
                   
                   {/* Features */}
@@ -129,13 +129,29 @@ export function PricingSection() {
                   
                   {/* CTA Button */}
                   <button className={`
-                    w-full py-4 rounded-full font-semibold transition-all duration-300 
+                    relative w-full py-4 rounded-full font-semibold transition-all duration-300 overflow-hidden group
                     ${plan.popular
                       ? 'bg-gradient-to-r from-navy-700 to-navy-900 text-white hover:from-navy-600 hover:to-navy-800 transform hover:scale-105 shadow-lg hover:shadow-navy-700/30'
                       : 'bg-dark-800/50 backdrop-blur-sm text-white border border-navy-700/30 hover:border-navy-600/50 hover:bg-dark-700/50'
                     }
                   `}>
-                    {plan.cta}
+                    {/* Static border */}
+                    <div className={`absolute inset-0 border rounded-full ${plan.popular ? 'border-navy-600/30' : 'border-navy-700/20'}`}></div>
+                    
+                    {/* Animated neon border effect */}
+                    <div className="absolute inset-0">
+                      <div className={`absolute top-0 left-0 h-[2px] w-full bg-gradient-to-r from-transparent to-transparent animate-border-slide-horizontal ${plan.popular ? 'via-navy-500' : 'via-slate-500'}`}></div>
+                      <div className={`absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-transparent to-transparent animate-border-slide-vertical-delayed ${plan.popular ? 'via-navy-500' : 'via-slate-500'}`}></div>
+                      <div className={`absolute bottom-0 right-0 h-[2px] w-full bg-gradient-to-l from-transparent to-transparent animate-border-slide-horizontal-reverse ${plan.popular ? 'via-navy-500' : 'via-slate-500'}`}></div>
+                      <div className={`absolute bottom-0 left-0 w-[2px] h-full bg-gradient-to-t from-transparent to-transparent animate-border-slide-vertical-reverse-delayed ${plan.popular ? 'via-navy-500' : 'via-slate-500'}`}></div>
+                    </div>
+                    
+                    {/* Glow effect on hover */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className={`absolute inset-0 blur-xl rounded-full ${plan.popular ? 'bg-navy-600/20' : 'bg-slate-600/10'}`}></div>
+                    </div>
+                    
+                    <span className="relative z-10">{plan.cta}</span>
                   </button>
                 </div>
               </div>

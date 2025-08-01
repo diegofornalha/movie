@@ -56,3 +56,59 @@ body {
 .cursor-click {
   animation: click 0.3s ease-in-out;
 }
+
+/* Neon border animations */
+@keyframes border-slide-horizontal {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes border-slide-horizontal-reverse {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes border-slide-vertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes border-slide-vertical-reverse {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-border-slide-horizontal {
+  animation: border-slide-horizontal 3s linear infinite;
+}
+
+.animate-border-slide-horizontal-reverse {
+  animation: border-slide-horizontal-reverse 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-border-slide-vertical-delayed {
+  animation: border-slide-vertical 3s linear infinite;
+  animation-delay: 0.75s;
+}
+
+.animate-border-slide-vertical-reverse-delayed {
+  animation: border-slide-vertical-reverse 3s linear infinite;
+  animation-delay: 2.25s;
+}

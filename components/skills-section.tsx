@@ -96,8 +96,24 @@ export function SkillsSection() {
           </div>
 
           <div className="text-center mt-8">
-            <button className="px-8 py-4 bg-gradient-to-r from-navy-700 to-navy-900 text-white rounded-full font-semibold transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30">
-              Teste 7 dias grátis →
+            <button className="relative px-8 py-4 bg-gradient-to-r from-navy-700 to-navy-900 text-white rounded-full font-semibold transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30 overflow-hidden group hover:from-navy-600 hover:to-navy-800">
+              {/* Static border */}
+              <div className="absolute inset-0 border border-navy-600/30 rounded-full"></div>
+              
+              {/* Animated neon border effect */}
+              <div className="absolute inset-0">
+                <div className="absolute top-0 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-navy-500 to-transparent animate-border-slide-horizontal"></div>
+                <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-transparent via-navy-500 to-transparent animate-border-slide-vertical-delayed"></div>
+                <div className="absolute bottom-0 right-0 h-[2px] w-full bg-gradient-to-l from-transparent via-navy-500 to-transparent animate-border-slide-horizontal-reverse"></div>
+                <div className="absolute bottom-0 left-0 w-[2px] h-full bg-gradient-to-t from-transparent via-navy-500 to-transparent animate-border-slide-vertical-reverse-delayed"></div>
+              </div>
+              
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-navy-600/20 blur-xl rounded-full"></div>
+              </div>
+              
+              <span className="relative z-10">Teste 7 dias grátis →</span>
             </button>
           </div>
         </div>
