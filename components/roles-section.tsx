@@ -46,16 +46,16 @@ export function RolesSection() {
     <section className="py-20 px-4 bg-gradient-to-b from-navy-900 to-black">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-navy-500 font-semibold mb-2">• FUNÇÕES</p>
+          <p className="text-navy-500 font-semibold mb-2">• FUNCIONÁRIOS IA</p>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
-            Se um já é bom, imagine um time de
+            Crie e gerencie funcionários de IA
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">
-              funcionários de IA
+              especializados para sua empresa
             </span>
           </h2>
           <p className="text-slate-500 text-lg">
-            Conheça alguns dos cargos que os Funcionários de IA dos Agentes de IA podem ocupar:
+            Configure funcionários IA em minutos. Cada um especializado em diferentes funções:
           </p>
         </div>
 
