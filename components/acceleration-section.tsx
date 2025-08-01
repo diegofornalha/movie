@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function AccelerationSection() {
   const [activeTrack, setActiveTrack] = useState<'technical' | 'management'>('technical')
@@ -43,6 +43,16 @@ export function AccelerationSection() {
       ]
     }
   }
+
+  // Auto-rotate between tracks every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTrack((prevTrack) => prevTrack === 'technical' ? 'management' : 'technical')
+    }, 3000) // 3 seconds
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-navy-900 to-black">

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function RolesSection() {
   const [activeRole, setActiveRole] = useState(0)
@@ -51,6 +51,16 @@ export function RolesSection() {
       gradient: "from-navy-600 to-dark-900"
     }
   ]
+
+  // Auto-rotate carousel every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveRole((prevRole) => (prevRole + 1) % roles.length)
+    }, 3000) // 3 seconds
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval)
+  }, [roles.length])
 
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-navy-900 to-black">
