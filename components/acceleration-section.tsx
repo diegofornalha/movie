@@ -99,7 +99,7 @@ export function AccelerationSection() {
             className={`
               px-6 py-3 rounded-full font-semibold transition-all
               ${activeTrack === 'technical'
-                ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white'
+                ? 'bg-gradient-to-r from-navy-700 to-navy-900 text-white shadow-lg'
                 : 'bg-dark-700 text-gray-400 border border-white/10 hover:text-white'
               }
             `}
@@ -111,7 +111,7 @@ export function AccelerationSection() {
             className={`
               px-6 py-3 rounded-full font-semibold transition-all
               ${activeTrack === 'management'
-                ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white'
+                ? 'bg-gradient-to-r from-navy-700 to-navy-900 text-white shadow-lg'
                 : 'bg-dark-700 text-gray-400 border border-white/10 hover:text-white'
               }
             `}

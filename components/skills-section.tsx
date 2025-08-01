@@ -60,20 +60,20 @@ export function SkillsSection() {
   ]
 
   return (
-    <section className="py-20 px-4 bg-dark-800">
+    <section className="py-20 px-4 bg-gradient-to-b from-dark-800 to-navy-900">
       <div className="container mx-auto max-w-6xl">
         {/* First part - Traditional features */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <p className="text-purple-400 font-semibold mb-2">• HABILIDADES</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <p className="text-navy-500 font-semibold mb-2">• HABILIDADES</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
               Muuuuuuito mais do<br />
               que chatbots<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-navy-600 to-navy-800">
                 tradicionais
               </span>
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+            <p className="text-slate-500 text-lg max-w-3xl mx-auto">
               Funcionários de IA não são apenas chatbots. Eles respondem por áudio, gerenciam calendário, 
               recuperam carrinhos abandonados e muito mais. Tudo o que você precisa para engajar e converter mais.
             </p>
@@ -83,12 +83,12 @@ export function SkillsSection() {
             {traditionalFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="bg-dark-700 rounded-xl p-4 border border-white/10 hover:border-purple-500/50 transition-all group"
+                className="bg-gradient-to-br from-dark-700/80 to-dark-800/80 backdrop-blur-sm rounded-xl p-4 border border-navy-700/30 hover:border-navy-600/50 transition-all group shadow-lg"
               >
-                <h4 className="text-white font-semibold mb-1 group-hover:text-purple-400 transition-colors">
+                <h4 className="text-slate-200 font-semibold mb-1 group-hover:text-navy-400 transition-colors">
                   {feature.name}
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-slate-500 text-sm">
                   {feature.description}
                 </p>
               </div>
@@ -96,7 +96,7 @@ export function SkillsSection() {
           </div>
 
           <div className="text-center mt-8">
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold transform transition-all hover:scale-105">
+            <button className="px-8 py-4 bg-gradient-to-r from-navy-700 to-navy-900 text-white rounded-full font-semibold transform transition-all hover:scale-105 shadow-lg hover:shadow-navy-700/30">
               Teste 7 dias grátis →
             </button>
           </div>
@@ -105,11 +105,11 @@ export function SkillsSection() {
         {/* Second part - AI Capabilities */}
         <div>
           <div className="text-center mb-12">
-            <p className="text-purple-400 font-semibold mb-2">• HABILIDADES</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <p className="text-navy-500 font-semibold mb-2">• HABILIDADES</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
               O que os Agentes de IA são capazes de fazer?
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+            <p className="text-slate-500 text-lg max-w-3xl mx-auto">
               Treinados para entender seu negócio e clientes, os Agentes de IA atuam de forma autônoma 
               ou como assistentes para sua equipe, impulsionando resultados e eficiência.
             </p>
@@ -121,20 +121,20 @@ export function SkillsSection() {
                 key={index}
                 className="relative group"
               >
-                <div className="bg-dark-700 rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all h-full">
+                <div className="bg-gradient-to-br from-dark-700/80 to-dark-800/80 backdrop-blur-sm rounded-xl p-6 border border-navy-700/30 hover:border-navy-600/50 transition-all h-full shadow-lg">
                   {/* Icon */}
                   <div className="text-4xl mb-4">{capability.icon}</div>
                   
                   {/* Content */}
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-slate-200 mb-2">
                     {capability.title}
                   </h3>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-slate-500 text-sm">
                     {capability.description}
                   </p>
                   
                   {/* Hover effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-navy-600/10 to-navy-800/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
               </div>
             ))}
