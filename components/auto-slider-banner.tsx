@@ -19,7 +19,7 @@ export function AutoSliderBanner() {
         muted
         playsInline
       >
-        <source src="/vídeo-lp.mp4" type="video/mp4" />
+        <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_otZVyjqpmZTuwE6xw72QLwbyTT9C/rjYXAVunHRWiYGkTaqdLB7/public/v%C3%ADdeo-lp.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Dark overlay for better readability */}
