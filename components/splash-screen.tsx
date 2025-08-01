@@ -1,17 +1,29 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 export function SplashScreen() {
   const [progress, setProgress] = useState(0)
   const [matrixText, setMatrixText] = useState("")
   const [isComplete, setIsComplete] = useState(false)
+  const [typedText, setTypedText] = useState("")
+  const fullText = "Agentes de IA"
 
   useEffect(() => {
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@%"
     let interval: NodeJS.Timeout
+    let typingIndex = 0
+
+    // Typing effect for "Agentes de IA"
+    const typingInterval = setInterval(() => {
+      if (typingIndex <= fullText.length) {
+        setTypedText(fullText.slice(0, typingIndex))
+        typingIndex++
+      } else {
+        clearInterval(typingInterval)
+      }
+    }, 150)
 
     // Matrix text effect
     const matrixInterval = setInterval(() => {
@@ -38,6 +50,7 @@ export function SplashScreen() {
     return () => {
       clearInterval(interval)
       clearInterval(matrixInterval)
+      clearInterval(typingInterval)
     }
   }, [])
 
@@ -48,14 +61,10 @@ export function SplashScreen() {
         isComplete ? "opacity-0 pointer-events-none" : "opacity-100",
       )}
     >
-      <div className="relative w-48 h-48 mb-8">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20sdfm-gDlxg0zxe6wVV9o5cISteykVa4LQhz.png"
-          alt="SDFM 2520"
-          fill
-          className="object-contain"
-          priority
-        />
+      {/* Typing effect text */}
+      <div className="text-4xl md:text-5xl font-bold text-white mb-8 font-mono">
+        {typedText}
+        <span className="animate-pulse">|</span>
       </div>
 
       {/* Matrix-style loading text */}
