@@ -38,7 +38,7 @@ export function AutoSliderBanner() {
         {/* Custom button with neon border animation */}
         <button 
           onClick={handleShopClick}
-          className="relative px-8 py-4 text-lg font-semibold text-white bg-transparent overflow-hidden group rounded-full"
+          className="relative px-8 py-4 text-lg font-semibold text-white bg-transparent overflow-hidden group rounded-full animate-shake"
         >
           {/* Button content */}
           <span className="relative z-10">AGENDAR DEMONSTRAÇÃO</span>
@@ -66,6 +66,47 @@ export function AutoSliderBanner() {
             <div className="absolute inset-0 bg-white/10 blur-xl"></div>
           </div>
         </button>
+        
+        {/* Scroll down arrow with 3 chevrons and traveling light */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer" onClick={handleShopClick}>
+          <div className="relative">
+            {/* Three chevron layers */}
+            <div className="flex flex-col items-center space-y-[-8px]">
+              <div className="relative overflow-hidden">
+                <svg className="w-12 h-8 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                {/* Traveling light on first chevron */}
+                <svg className="absolute inset-0 w-12 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" 
+                    className="stroke-white animate-chevron-light" style={{strokeDasharray: '28', strokeDashoffset: '28'}} />
+                </svg>
+              </div>
+              
+              <div className="relative overflow-hidden">
+                <svg className="w-12 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                {/* Traveling light on second chevron */}
+                <svg className="absolute inset-0 w-12 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" 
+                    className="stroke-white/80 animate-chevron-light" style={{strokeDasharray: '28', strokeDashoffset: '28', animationDelay: '0.5s'}} />
+                </svg>
+              </div>
+              
+              <div className="relative overflow-hidden">
+                <svg className="w-12 h-8 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                {/* Traveling light on third chevron */}
+                <svg className="absolute inset-0 w-12 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" 
+                    className="stroke-white/60 animate-chevron-light" style={{strokeDasharray: '28', strokeDashoffset: '28', animationDelay: '1s'}} />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
         
         <style jsx>{`
           @keyframes border-slide-horizontal {
@@ -121,6 +162,38 @@ export function AutoSliderBanner() {
           .animate-border-slide-vertical-reverse-delayed {
             animation: border-slide-vertical-reverse 3s linear infinite;
             animation-delay: 2.25s;
+          }
+          
+          @keyframes shake {
+            0%, 100% {
+              transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+              transform: translateX(-2px);
+            }
+            20%, 40%, 60%, 80% {
+              transform: translateX(2px);
+            }
+          }
+          
+          .animate-shake {
+            animation: shake 2s ease-in-out infinite;
+          }
+          
+          @keyframes chevron-light {
+            0% {
+              stroke-dashoffset: 28;
+            }
+            50% {
+              stroke-dashoffset: 0;
+            }
+            100% {
+              stroke-dashoffset: -28;
+            }
+          }
+          
+          .animate-chevron-light {
+            animation: chevron-light 3s linear infinite;
           }
         `}</style>
       </div>
