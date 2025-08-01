@@ -22,11 +22,18 @@ export function AutoSliderBanner() {
         <source src="/vídeo-lp.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-100 text-center mb-4">
+      {/* Dark overlay for better readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-30">
+        {/* Additional gradient overlay for text area */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-black/40" />
+      </div>
+      
+      {/* Content container */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white text-center mb-4 drop-shadow-2xl">
           Agentes Integrados
         </h1>
-        <p className="text-xl text-gray-300 text-center mb-8">Seus Agentes Conectados</p>
+        <p className="text-xl text-gray-100 text-center mb-8 drop-shadow-lg">Seus Agentes Conectados</p>
         
         {/* Custom button with neon border animation */}
         <button 
