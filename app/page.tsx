@@ -1,7 +1,6 @@
 import { AutoSliderBanner } from "@/components/auto-slider-banner"
 import { HeroSection } from "@/components/hero-section"
 import { BenefitsSection } from "@/components/benefits-section"
-import { ChallengeSection } from "@/components/challenge-section"
 import { StatsSection } from "@/components/stats-section"
 import { IntegrationsSection } from "@/components/integrations-section"
 import { RolesSection } from "@/components/roles-section"
@@ -23,9 +22,6 @@ export default function Home() {
 
       {/* Benefits Section */}
       <BenefitsSection />
-
-      {/* Challenge Section */}
-      <ChallengeSection />
 
       {/* Stats Section */}
       <StatsSection />
