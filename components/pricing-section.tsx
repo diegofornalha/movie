@@ -16,14 +16,14 @@ export function PricingSection() {
       name: "WhatsApp+Agentes Pro",
       price: "R$197",
       period: "/mês",
-      description: "Mais popular - DESAFIO 5 resolvido",
+      description: "Escalar ficou fácil",
       features: [
         "Funcionários de IA ilimitados",
         "Criação e gerenciamento fácil",
         "Comunidade exclusiva",
         "Evolution+N8N",
         "Disparador de mensagens",
-        "Resolve métodos tradicionais",
+        "Escalar ficou fácil",
       ],
       cta: "Teste 7 dias grátis →",
       gradient: "from-navy-700 to-navy-900",
@@ -33,7 +33,7 @@ export function PricingSection() {
       name: "Multicanal Enterprise",
       price: "R$297",
       period: "/mês",
-      description: "Para grandes equipes",
+      description: "Para quem já é grande",
       features: [
         "Funcionários IA ilimitados",
         "Gerenciamento avançado",
@@ -57,7 +57,7 @@ export function PricingSection() {
             Funcionários IA a partir de R$97/mês
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">
-              Mais barato que um estagiário
+              Mais barato que isso você não encontra
             </span>
           </h2>
         </div>

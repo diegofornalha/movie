@@ -46,7 +46,7 @@ export function BenefitsSection() {
       gradient: "from-blue-500 to-blue-700",
     },
     {
-      title: "Resolve o DESAFIO 5",
+      title: "Escalar ficou fácil",
       description:
         "Supere o maior desafio das empresas modernas: escalar atendimento mantendo qualidade. Nossa IA resolve isso para você.",
       icon: "",
