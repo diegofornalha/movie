@@ -31,13 +31,13 @@ export function AutoSliderBanner() {
         {/* Custom button with neon border animation */}
         <button 
           onClick={handleShopClick}
-          className="relative px-8 py-4 text-lg font-semibold text-white bg-transparent overflow-hidden group"
+          className="relative px-8 py-4 text-lg font-semibold text-white bg-transparent overflow-hidden group rounded-full"
         >
           {/* Button content */}
           <span className="relative z-10">AGENDAR DEMONSTRAÇÃO</span>
           
           {/* Static border */}
-          <div className="absolute inset-0 border border-white/30"></div>
+          <div className="absolute inset-0 border border-white/30 rounded-full"></div>
           
           {/* Animated neon border effect */}
           <div className="absolute inset-0">
