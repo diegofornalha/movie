@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 
 export function AutoSliderBanner() {
   const handleShopClick = () => {
-    const productSection = document.getElementById("product-section")
-    if (productSection) {
-      productSection.scrollIntoView({ behavior: "smooth" })
+    const heroSection = document.getElementById("hero-section")
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
